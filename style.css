@@ -147,7 +147,7 @@ body {
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    margin-top: 50px;
+    margin-top: 40px;
 }
 
 .js-main__nav--clock {

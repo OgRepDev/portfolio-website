@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OgRepDev...</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <script src="https://kit.fontawesome.com/56e6149cff.js" crossorigin="anonymous"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;700&display=swap" rel="stylesheet">
+
+</head>
+<body onload="startTime(), typeWriter()">
+    <div class="main">
+        <div class="main__nav-toggle">
+            <div class="main__nav-toggle-icon">
+                <span></span>
+            </div>
+        </div>
+        <div class="main__nav">
+            <img src="imgs/LOGO.png" alt="" height="200px">
+            <ul>
+                <li>ogrepdev@gmail.com</li>
+                <li><a href="#home-section" class="hover-underline-animation is-active">HOME</a></li>
+                <li><a href="#portfolio-section" class="hover-underline-animation">PORTFOLIO</a></li>
+                <li><a href="#games-section" class="hover-underline-animation">GAMES</a></li>
+                <li><a href="#about-me-section" class="hover-underline-animation">ABOUT ME</a></li>
+                <li><a href="#contact-section" class="hover-underline-animation">CONTACT</a></li>
+            </ul>
+            <div class="main__nav--icons">
+                <span class="js-main__nav--clock"></span>
+                <div class="main__nav-icons-icons">
+                    <a href=""><i class="fa-brands fa-github"></i></a></i>
+                    <a href=""><i class="fa-brands fa-facebook-f"></i></a></i>
+                    <a href=""><i class="fa-brands fa-linkedin-in"></i></a></i>
+                </div>
+            </div>
+        </div>
+        <div class="main__content">
+            <div class="main__content--home" id="home-section">
+                <div class="main__content--home-left">
+                    <div class="main__content--home-left-up">
+                        <p>Hello there,</p>
+                        <h1>I'm Og_Rep_Dev</h1>
+                        <p class="js-typing-animation">
+                        </p>
+                    </div>
+                    <div class="main__content--home-left-down">
+                        <button>
+                            <span class="main__button-animation"></span>
+                            <a href="#games-section">MY GAMES</a>
+                        </button>
+                        <button>
+                            <span class="main__button-animation"></span>
+                            <a href="">MY MUSIC</a>
+                        </button>
+                    </div>
+                </div>
+                <div class="main__content--home-right">
+                    <div class="main__content--home-right-wrapper">
+                        <img src="imgs/me-chibi.png" alt="" height="800px">
+                    </div>
+                </div>
+            </div>
+            <div class="main__content--portfolio" id="portfolio-section">
+                <div class="main__content--portfolio-slide">
+                    <img src="imgs/2.png" alt="">
+                </div>
+                <div class="main__content--portfolio-slide">
+                    <img src="imgs/3.jpg" alt="">
+                </div>
+                <div class="main__content--portfolio-slide">
+                    <img src="imgs/4.jpg" alt="">
+                </div>
+                <div class="main__content--portfolio-slide">
+                    <img src="imgs/5.jpg" alt="">
+                </div>
+                <div class="main__content--portfolio-slide">
+                    <img src="imgs/6.jpg" alt="">
+                </div>
+                <div class="main__content--portfolio-slide">
+                    <img src="imgs/7.jpg" alt="">
+                </div>
+                <div class="main__content--portfolio-slide">
+                    <img src="imgs/6.jpg" alt="">
+                </div>
+                <div class="main__content--portfolio-slide">
+                    <img src="imgs/3.jpg" alt="">
+                </div>
+                <div class="main__content--portfolio-slide">
+                    <img src="imgs/5.jpg" alt="">
+                </div>
+                <div class="main__content--portfolio-slide">
+                    <img src="imgs/2.png" alt="">
+                </div>
+                <div class="main__content--portfolio-slide">
+                    <img src="imgs/4.jpg" alt="">
+                </div>
+                <div class="main__content--portfolio-slide">
+                    <img src="imgs/6.jpg" alt="">
+                </div>
+                <div class="main__content--portfolio-slide">
+                    <img src="imgs/2.png" alt="">
+                </div>
+                <div class="main__content--portfolio-slide">
+                    <img src="imgs/4.jpg" alt="">
+                </div>
+            </div>
+            <div class="main_content--games" id="games-section">
+                <div class="main__content--games-wrapper">
+                    <p class="main__content--games-title">Rock Paper Scissors</p>
+        
+                    <div class="main__content--games-buttons">
+                        <button onclick="
+                        playGame('rock');
+                        " class="move-button"><img src="imgs/rock-emoji.png" alt="rock" class="move-icon"></button>
+            
+                        <button onclick="
+                        playGame('paper');
+                        " class="move-button"><img src="imgs/paper-emoji.png" alt="rock" class="move-icon"></button>
+            
+                        <button onclick="
+                        playGame('scissors');
+                        " class="move-button"><img src="imgs/scissors-emoji.png" alt="rock" class="move-icon"></button>
+                    </div>
+                    
+                    <p class="js-result result">Let's Begin!</p>
+        
+                    <p class="js-moves moves"></p>
+        
+                    <p class="js-score score" ></p>
+        
+                    <div class="main__content--games-reset-button-contener">
+                        <button onclick="resetScore()" class="reset-score-button">Reset Score</button>
+                    </div>
+                    
+                
+                </div>
+            </div>
+            <div class="main__content--about-me" id="about-me-section">
+                <div class="main__content--about-me-name-scarf"><p>ABOUT ME</p></div>
+                <p>Im Jacob but in internet Im known as Repellax (in the circle of friends) or RPL ((its shortcut for RePeLlax)my music producer nickname) or even OgRepDev (developer nickname).
+                Im 21 years old boy who became interested in programming since young age.
+                Im calm and silent boy but easily I can fit in any group. I can talk too much or I can say anything, depends on situation or people, but at home I’m energetic and trying to be funny :’D. 
+                I have good sense of humor and I like to laugh because it’s healthy :3. </p>
+
+                <p>My greatest asset is my ability to learn quickly. I like to absorb information quickly and I like to teach someone or showing some tricks or tips that I know.
+                Unfortunately, the biggest disadvantage is living in tension.
+                I have been suffering from anxiety neurosis for half a year and the period of 4 months was a nightmare for me, but I did not discourage myself from acting. To put it even better, it motivated me to take action
+                </p>
+
+                <p>I expand my knowledge in the field of various technologies every day, but not non-stop.
+                I like to play basketball or draw and more professionally I like to watch anime or create electronic music.
+                It relax me a lot =.=
+                </p>
+
+                <p>I started my programming adventure from HTML and CSS, then I moved to Java and then I moved to C#. After that I started learning JavaScript and whole WEB Developing interested me. My biggest dream is to be the part of group who will invents AR that will move your thinks to a game (concept from anime Sword Art Online).
+                </p>
+                
+                <p>I like to learn and I wanted to learn more to expand my knowledge and be useful for the world as programmer, but in the first place I want to become useful for my family who supports me with everything ❤️
+                </p>
+            </div>
+            <div class="main__content--contact" id="contact-section">
+                <p>Your Email:</p>
+                <input type="text" placeholder="Write your email...">
+                <p>Title</p>
+                <input type="text" placeholder="Write title of your email...">
+                <p>Message</p>
+                
+                <textarea placeholder="Here you can ask me whatever you want...">
+                    
+                </textarea>
+                <button>SEND</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function startTime() {
+            const today = new Date();
+            let h = today.getHours();
+            let m = today.getMinutes();
+            let s = today.getSeconds();
+
+            m = checkTime(m);
+            s = checkTime(s);
+
+            document.querySelector('.js-main__nav--clock').innerHTML = h + ':' + m + ':' + s;
+            setTimeout(startTime, 1000);
+        }
+        
+        function checkTime(i){
+            if (i < 10) {
+                i = '0' + i;
+            }
+            return i;
+        }
+
+        let i = 0;
+        const txt = 'I\'m Jacob and I\'m Frontend Developer and Music Producer';
+        const speed = 30;
+
+        function typeWriter() {
+            if (i < txt.length) {
+                document.querySelector('.js-typing-animation').innerHTML += txt.charAt(i);
+                i++;
+                setTimeout(typeWriter, speed);
+            }
+        }
+
+        console.log(txt);
+
+        const menu_toggle = document.querySelector('.main__nav-toggle');
+        const sidebar = document.querySelector('.main__nav');
+
+        menu_toggle.addEventListener('click', () => {
+            menu_toggle.classList.toggle('is-active');
+            sidebar.classList.toggle('is-active');
+        })
+    </script>
+    <script src="js/rock-paper-scissors-game.js"></script>
+</body>
+</html>

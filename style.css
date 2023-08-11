@@ -600,3 +600,7 @@ body {
         height: 20%;
     }
 }
+
+@media (max-width: 320px) {
+    
+}
